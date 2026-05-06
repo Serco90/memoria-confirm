@@ -10,7 +10,7 @@
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body {
         font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-        background: #0f1514;
+        background: #0f1117;
         color: white;
         min-height: 100vh;
         display: flex;
@@ -24,18 +24,29 @@
         font-size: 34px;
         font-weight: 800;
         color: #0d9488;
-        letter-spacing: -0.5px; line-height: 1;
-        margin-bottom: 8px;
+        letter-spacing: -0.5px;
+        line-height: 1;
+        margin-bottom: 24px;
+        max-width: 360px;
+        width: 100%;
       }
-      .icon { font-size: 64px; margin-bottom: 16px; }
-      h1 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
-      p { font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+      .card {
+        background: #1a1d27;
+        border-radius: 24px;
+        padding: 40px 32px;
+        text-align: center;
+        max-width: 360px;
+        width: 100%;
+        border: 1px solid rgba(255,255,255,0.08);
+      }
+      .icon { font-size: 56px; margin-bottom: 16px; }
+      h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+      p { color: #9ca3af; font-size: 15px; line-height: 1.5; margin-bottom: 24px; }
       .btn {
-        display: inline-block;
-        margin-top: 32px;
+        display: block;
         background: #0d9488;
         color: white;
-        padding: 16px 32px;
+        padding: 16px 24px;
         border-radius: 14px;
         font-size: 16px;
         font-weight: 600;
@@ -46,9 +57,11 @@
   </head>
   <body>
     <div class="app-name">Memoria</div>
-    <div class="icon">📸</div>
-    <h1>You're confirmed!</h1>
-    <p>Your Memoria account is ready.<br/>Tap below to open the app and log in.</p>
-    <a class="btn" href="memoria://home">Open Memoria</a>
+    <div class="card">
+      <div class="icon">📸</div>
+      <h1>You're confirmed!</h1>
+      <p>Your Memoria account is ready.<br/>Tap below to open the app and log in.</p>
+      <a class="btn" href="memoria://home">Open Memoria</a>
+    </div>
   </body>
 </html>
